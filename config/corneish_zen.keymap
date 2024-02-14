@@ -13,6 +13,13 @@
 #define M_EN LANG2
 
 / {
+    chosen {
+        zmk,matrix-transform = &default_transform;
+        // zmk,matrix-transform = &five_column_transform;
+    };
+};
+
+/ {
         keymap {
                 compatible = "zmk,keymap";
 
